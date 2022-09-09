@@ -5,7 +5,7 @@ const Footer = () => {
     <footer class='footer'>
       <div class='container-2'>
         <div class='row2'>
-          <div class='row'>
+          <div class='rows'>
             <div class='column'>
               <ul class='list-unstyled'>
                 <li>

@@ -6,16 +6,18 @@
 body {
   background-color: #f5f5f5;
 }
-.container {
+.container2 {
   position: fixed;
+  top: 0;
   z-index: 500;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%;
-  min-width: 10vh;
+  min-width: 10vw;
   padding-left: 8%;
   padding-right: 8%;
   overflow: hidden;
-  background: white;
+  background: rgba(255, 233, 233, 0.472);
+  opacity: 0.8;
 }
 
 .nav_text {
@@ -36,10 +38,11 @@ body {
   /* filter: drop-shadow(0 0 10px black); */
 }
 
-.navbar {
+.navbar-big {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 nav {
@@ -51,4 +54,35 @@ nav ul li {
   display: inline-block;
   margin-right: 30px;
   list-style: none;
+}
+.ham-menu {
+  display: none;
+}
+.bar {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  margin-top: 0.4rem;
+  transition: all 1s ease-in-out;
+}
+
+.cross-1 {
+  transform: translateY(0.25rem) rotate(45deg);
+}
+.cross-2 {
+  transform: translateY(-0.25rem) rotate(-45deg);
+}
+.ham-bars {
+  display: none;
+}
+@media screen and (max-width: 786px) {
+  .navbar-links {
+    display: none;
+  }
+  .ham-bars {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+  }
 }
